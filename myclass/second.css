@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 80px;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -70px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+    list-style: none;
+    padding: 10px 30px;
+    justify-content: last baseline;
+
+
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    color: red;
+}
+
+.rightnav {
+    text-align: right;
+    margin-left: 70px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    font-weight: bolder;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('yp.jpg') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-main {
+    text-align: center;
+}
+
+.new {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playwrite AU VIC", cursive;
+    white-space: nowrap;
+    margin-top: -100px;
+
+}
+
+.old {
+    font-family: "Playwrite AU VIC", cursive;
+    color: red;
+    margin-top: -20px;
+}
+
+.highlights {
+    color: red;
+}
+
+.text-big {
+
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-top: -30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 27px;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+/* about */
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about img {
+    width: 30%;
+    margin-left: 10%;
+}
+
+.side-paragraph {
+    flex: 1;
+}
+
+.about p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.about h1 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.about span {
+    color: red;
+    margin-left: 15px;
+    font-family: mv boli;
+
+}
+
+.about h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: red;
+    display: block;
+    position: relative;
+    bottom: 15px;
+
+}
+
+/* menu */
+
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h1 {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+
+}
+
+.menu h1 span {
+    color: red;
+    margin-left: 15px;
+    font-family: mv boli;
+
+}
+
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: red;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu_card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.menu_image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu_card h2 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.menu_card p {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.menu_card:hover {
+    transform: scale(1.05);
+}
+
+.menu h2 {
+    font-family: mv boli;
+}
+
+/* gallery */
+
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-family: mv boli;
+}
+
+.gallery_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery_card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.gallery_image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallery_card:hover {
+    transform: scale(1.05);
+}
+
+/* discount */
+
+.discount {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.dishead h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: mv boli;
+}
+
+.dishead h1 span {
+    color: red;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.dishead h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: red;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.discount h1 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: mv boli;
+}
+
+.discount_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    bottom: 50px;
+}
+
+.discount_card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+    width: 400px;
+}
+
+.discount_image img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    background-size: cover;
+}
+
+.discount_info {
+    margin-top: -460px;
+}
+
+.batan {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(216, 23, 17);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: -210px;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+
+.batan:hover {
+    background-color: #0056b3;
+}
+
+.hed1 {
+    font-family: "Playwrite NZ", cursive;
+    color: white;
+    font-weight: 300;
+    margin-left: -180px;
+}
+
+.head1 {
+    color: white;
+    margin-left: -50px;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+.hed2 {
+    font-family: "Playwrite NZ", cursive;
+    margin-left: -180px;
+    color: white;
+    margin-top: -40px;
+}
+
+.head2 {
+    margin-left: -5px;
+    color: white;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+.hed3 {
+    font-family: "Playwrite NZ", cursive;
+    color: white;
+    font-weight: 300;
+    margin-left: -180px;
+}
+
+.head3 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: -40px;
+    font-weight: 400;
+    margin-top: -40px;
+
+}
+
+/* contact */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.hd2 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: mv boli;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    flex-wrap: wrap;
+    margin-top: -50px;
+
+}
+
+.contact-info,
+.contact-form {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: -100px;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    border-right: 2px solid #ccc;
+    text-align: center;
+    flex: 1;
+    margin-top: -175px;
+
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info .social-icons {
+    margin-top: 20px;
+
+}
+
+.contact-info .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.contact-form {
+    background-color: brown;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 400px;
+    margin-left: -100px;
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: darkorange;
+}
+
+.hd2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+    font-size: 60px;
+    font-family: mv boli;
+}
+
+/* blog  */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#blog {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 45px;
+    font-family: mv boli;
+}
+
+#blog h1 span {
+    color: red;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-20px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    margin: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.blog-card p {
+    margin: 0 20px 20px;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 0 20px 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #e65c00;
+}
+
+/* social icon */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: orange;
+}
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.contact-infor {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.footer-section {
+    flex: 1;
+    width: 150px;
+    margin: 20px;
+   
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}

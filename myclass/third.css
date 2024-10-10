@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -70px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+    list-style: none;
+    padding: 10px 30px;
+    justify-content: last baseline;
+    
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    color: red;
+}
+
+.rightnav {
+    text-align: right;
+    margin-left: 70px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('yp.jpg') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-main {
+    text-align: center;
+}
+
+ .new {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playwrite AU VIC", cursive;
+    white-space: nowrap;
+   margin-top: -100px;
+   
+ }
+ .old {
+    font-family: "Playwrite AU VIC", cursive;
+    color: red;
+    margin-top: -20px;
+}
+
+ .highlights {
+    color: red;
+}
+
+.text-big {
+
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 27px;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.side-paragraph {
+    flex: 1;
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  
+
+}
+.menu h1 span {
+    color: red;
+    margin-left: 15px;
+    font-family: mv boli;
+
+}
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: red;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu_card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.menu_image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu_card h2 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.menu_card p {
+    margin: 10px;
+    font-size: 16px;
+}
+.menu_card:hover {
+    transform: scale(1.05);
+}
+.menu h2{
+    font-family: mv boli;
+}
+
+
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-family: mv boli;
+}
+
+.gallery_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery_card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.gallery_image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.gallery_card:hover {
+    transform: scale(1.05);
+}
+
+/* discount */
+
+.discount {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.discount h1 {
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: mv boli;
+
+}
+.discount h1 span {
+    color: red;
+    margin-left: 15px;
+    font-family: mv boli;
+
+}
+.discount h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: red;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+
+.discount_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.discount_card {  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0); 
+     width: 400px;  
+ } 
+
+.discount_image img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    background-size: cover;
+}
+
+.discount_info {
+    /* font-size: 16px; */
+  margin-top: -460px;
+}
+
+.batan {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(216, 23, 17);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: -210px;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+
+.batan:hover {
+    background-color: #0056b3;
+}
+.hed1{
+    font-family:"Playwrite NZ", cursive;
+    color: white;
+    font-weight: 300;
+    margin-left: -180px;
+}
+.head1{
+    color: white;
+    margin-left: -90px;
+}
+.hed2{
+    font-family:"Playwrite NZ", cursive;
+    margin-left: -180px;
+    color: white;
+}
+.head2{
+    margin-left: -90px;
+    color: white;
+}
+
+.hed3{
+    font-family:"Playwrite NZ", cursive;
+    color: white;
+    font-weight: 300;
+    margin-left: -180px;
+}
+.head3{
+    color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-left: -120px;
+   font-weight: 400;
+   
+}
+/* contact */
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0; */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    flex-wrap: wrap; /* Adjust this to allow wrapping */
+    margin-top: -50px;
+   
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-left: -100px;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    border-right: 2px solid #ccc;
+    text-align: center;
+    flex: 1; /* Flex to ensure it uses available space */
+    margin-top: -175px;
+    
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    color: black;
+  
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info .social-icons {
+    margin-top: 20px;
+    
+}
+
+.contact-info .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+  
+}
+
+.contact-form {
+    background-color:brown;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Flex to ensure it uses available space */
+    max-width: 400px; /* Limit the width for better appearance */
+    margin-left: -100px;
+
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.contact-form input, .contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: darkorange;
+}
+.hd2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    font-size: 45px;
+    font-family: mv boli;
+}
+
+
+
+
+
